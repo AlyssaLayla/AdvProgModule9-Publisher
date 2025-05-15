@@ -21,3 +21,6 @@ Running RabbitMQ with one connection screenshots:
 Running cargo run from the console:
 ![sending processing](images/sendingprocessing.png)
 Publisher mengirim 5 event ke message broker yang akan diproses oleh subscriber
+
+![spike](images/spike.png)
+Setiap kali perintah cargo run dijalankan pada program publisher, terjadi spike pada grafik. Spike ini menunjukkan bahwa publisher berhasil mengirim pesan ke broker RabbitMQ. Pada kasus ini, program dijalankan dua kali sehingga tampak dua spike pada grafik dengan warna ungu yang menunjukkan aktivitas pengiriman (Publish) pesan. Karena tidak ada pesan yang tertinggal di antrean (Queued messages = 0), hal ini mengindikasikan bahwa pesan langsung diproses atau tidak memerlukan acknowledgment. 
