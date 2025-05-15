@@ -14,3 +14,10 @@
 
 Running RabbitMQ as message broker screenshots:
 ![running raabitMQ](images/runningrabbit.png)
+
+Running RabbitMQ with one connection screenshots:
+![connection rabbit](images/connectionrabbit.png)
+
+Running cargo run from the console:
+![sending processing](images/sendingprocessing.png)
+Publisher mengirim 5 event ke message broker yang akan diproses oleh subscriber
